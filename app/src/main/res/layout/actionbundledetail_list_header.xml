@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="560dp"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_header_bg">
+
+        <TableRow android:id="@+id/actionbundledetail_list_header_row">
+
+            <TextView
+                style="@style/list_item_header_text_style"
+                android:layout_width="130dp"
+                android:text="包名称" />
+
+            <TextView
+                style="@style/list_item_header_text_style"
+                android:layout_width="160dp"
+                android:text="动作名称" />
+
+            <TextView
+                style="@style/list_item_header_text_style"
+                android:layout_width="160dp"
+                android:text="动作类型" />
+
+            <TextView
+                style="@style/list_item_header_text_style"
+                android:layout_width="130dp"
+                android:text="顺序" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

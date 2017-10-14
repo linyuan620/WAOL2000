@@ -1,0 +1,345 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="skyray.waol2000.FragmentMaintain_ConnectionOut">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnActionBundle"
+            style="@style/toolButtonStyle"
+            android:text="动作包" />
+
+        <View
+            android:layout_width="@dimen/form_padding"
+            android:layout_height="match_parent"></View>
+
+        <Button
+            android:id="@+id/btnActionBundleDetail"
+            style="@style/toolButtonStyle"
+            android:text="动作包细节" />
+
+        <View
+            android:layout_width="@dimen/form_padding"
+            android:layout_height="match_parent"></View>
+
+        <Button
+            android:id="@+id/btnActionFlow"
+            style="@style/toolButtonStyle"
+            android:text="流程" />
+
+
+        <View
+            android:layout_width="@dimen/form_padding"
+            android:layout_height="match_parent"></View>
+
+        <Button
+            android:id="@+id/btnFlowDetail"
+            style="@style/toolButtonStyle"
+            android:text="流程细节" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+    <View
+        android:background="@color/color_dark_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--动作包设置-->
+        <LinearLayout
+            android:id="@+id/ll_ActionBundle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="580dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/actionbundle_list"></include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动作包名称" />
+
+                <EditText
+                    android:id="@+id/etActionBundleName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"></View>
+
+                <Button
+                    android:id="@+id/btnAddActionBundle"
+                    style="@style/toolButtonStyle"
+                    android:text="@string/add" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"></View>
+
+                <Button
+                    android:id="@+id/btnDeleteActionBundle"
+                    style="@style/toolButtonStyle"
+                    android:text="@string/delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--动作包细节设置-->
+        <LinearLayout
+            android:id="@+id/ll_ActionBundleDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="580dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/actionbundledetail_list"></include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动作包名称" />
+
+                <Spinner
+                    android:id="@+id/ddl_ActionBundleNames"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动作类型" />
+
+                <Spinner
+                    android:id="@+id/ddl_ActionType"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动作名称" />
+
+                <Spinner
+                    android:id="@+id/ddl_ActionName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="顺序" />
+
+                <EditText
+                    android:id="@+id/etActionOrder"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"></View>
+
+                <Button
+                    android:id="@+id/btnAddActionBundleDetail"
+                    style="@style/toolButtonStyle"
+                    android:text="@string/add" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"></View>
+
+                <Button
+                    android:id="@+id/btnDeleteActionBundleDetail"
+                    style="@style/toolButtonStyle"
+                    android:text="@string/delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--流程-->
+        <LinearLayout
+            android:id="@+id/ll_Flow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <include layout="@layout/flow_list"></include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="流程名称" />
+
+                <EditText
+                    android:id="@+id/etFlowName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="流程类型" />
+
+                <Spinner
+                    android:id="@+id/ddl_FlowType"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"></View>
+
+                <Button
+                    android:id="@+id/btnAddFlow"
+                    style="@style/toolButtonStyle"
+                    android:text="@string/add" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"></View>
+
+                <Button
+                    android:id="@+id/btnDeleteFlow"
+                    style="@style/toolButtonStyle"
+                    android:text="@string/delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--流程细节-->
+        <LinearLayout
+            android:id="@+id/ll_FlowDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="560dp"
+                android:layout_height="match_parent">
+                <include layout="@layout/flowdetail_list"></include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="流程名称" />
+
+                <Spinner
+                    android:id="@+id/ddl_flowNames"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动作包" />
+
+                <Spinner
+                    android:id="@+id/ddl_ActionBundles"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="执行顺序" />
+
+                <EditText
+                    android:id="@+id/et_ExcuteOrder"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"></View>
+
+                <Button
+                    android:id="@+id/btnAddFlowDetail"
+                    style="@style/toolButtonStyle"
+                    android:text="@string/add" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"></View>
+
+                <Button
+                    android:id="@+id/btnDeleteFlowDetail"
+                    style="@style/toolButtonStyle"
+                    android:text="@string/delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

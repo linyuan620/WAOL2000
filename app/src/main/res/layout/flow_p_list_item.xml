@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow android:id="@+id/flow_p_list_row">
+        <TextView
+            android:id="@+id/flow_p_name"
+            style="@style/list_item_text_style"
+            android:layout_width="match_parent" />
+    </TableRow>
+</TableLayout>

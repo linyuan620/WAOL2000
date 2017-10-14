@@ -1,0 +1,225 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="skyray.waol2000.FragmentMaintain_HandCalibrate">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/labelitemback"
+        android:text="标        定" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/button_normal"></View>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="浓度1" />
+
+        <EditText
+            android:id="@+id/etContentOne"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="初始光电压" />
+
+        <EditText
+            android:id="@+id/etOriginalVoltage1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:enabled="false" />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="最终光电压" />
+
+        <EditText
+            android:id="@+id/etFinalVoltage1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/btnCalibrateOne"
+            style="@style/toolButtonStyle"
+            android:text="标定1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="浓度2" />
+
+        <EditText
+            android:id="@+id/etContentTwo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="初始光电压" />
+
+        <EditText
+            android:id="@+id/etOriginalVoltage2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:enabled="false" />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="最终光电压" />
+
+        <EditText
+            android:id="@+id/etFinalVoltage2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/btnCalibrateTwo"
+            style="@style/toolButtonStyle"
+            android:text="标定2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="当前动作" />
+
+        <TextView
+            android:id="@+id/currentCalibrateAction"
+            android:layout_width="620dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnStopCalibrate"
+            style="@style/toolButtonStyle"
+            android:text="停  止" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/labelitemback"
+        android:text="标定系数" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/button_normal"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="当前K" />
+
+        <EditText
+            android:id="@+id/etCurrentK"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="当前B" />
+
+        <EditText
+            android:id="@+id/etCurrentB"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="标定K" />
+
+        <EditText
+            android:id="@+id/etCalibrateK"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="标定B" />
+
+        <EditText
+            android:id="@+id/etCalibrateB"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"></View>
+        <Button
+            android:id="@+id/btnUpdateKB"
+            style="@style/toolButtonStyle"
+            android:text="替  换" />
+
+    </LinearLayout>
+
+</LinearLayout>

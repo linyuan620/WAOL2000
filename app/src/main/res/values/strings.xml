@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">WAOL2000</string>
+    <string name="fg_notsupport">暂不支持</string>
+    <string name="title_activity_main">主窗体</string>
+    <string name="title_main">WAOL2000</string>
+    <string name="title_activity_maintain">仪表维护</string>
+    <string name="title_activity_history">历史数据</string>
+    <string name="title_activity_log">运行日志</string>
+    <string name="title_activity_setting">参数设置</string>
+    <string name="menu_exit">退出</string>
+    <string name="btnStartMeasure">启动</string>
+    <string name="btnStopMeasure">停止</string>
+    <string name="iExitConfirm">确定退出？</string>
+    <string name="iConfirm">确定</string>
+    <string name="iCancel">取消</string>
+    <string name="e_HandControl">手动控制</string>
+    <string name="e_StepOperation">单步操作</string>
+    <string name="e_HandCalibrate">手动标定</string>
+    <string name="e_StandardCheck">标液审核</string>
+    <string name="e_ConnectionOut">外部通讯</string>
+    <string name="title_setting_valve">阀设置</string>
+    <string name="title_setting_pump">泵设置</string>
+    <string name="title_setting_injection">进样设置</string>
+    <string name="title_setting_measure">测量设置</string>
+    <string name="title_setting_connection">通讯设置</string>
+    <string name="title_setting_action">动作设置</string>
+    <string name="title_setting_calibrate">标定设置</string>
+    <string name="title_setting_flow">流程设置</string>
+    <string name="title_setting_about">关于</string>
+    <string name="pumpMoveOppositeDirection">反向</string>
+    <string name="pumpMoveForwardDirection">正向</string>
+    <string name="sw_autoCalibrateOn">开启自动标定</string>
+    <string name="sw_autoCalibrateOff">关闭自动标定</string>
+    <string name="sw_firstLoopCalibrateOn">开始测量时标定</string>
+    <string name="sw_firstLoopCalibrateOff">关闭测量时标定</string>
+    <string name="switchOn">开</string>
+    <string name="switchOff">关</string>
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="allTimes">全部</string>
+    <string name="currentAction">当前动作</string>
+    <string name="injectionInfoName">进样名称</string>
+    <string name="injectionInfoInputPort">试剂输入端口</string>
+    <string name="injectionInfoOutputPort">试剂输出端口</string>
+    <string name="injectionInfoHeigth">取液高度</string>
+    <string name="voltageOriginal">初始光电压</string>
+    <string name="voltageFinal">最终光电压</string>
+    <string-array name="PortName">
+        <item>COM1</item>
+        <item>COM2</item>
+    </string-array>
+    <string-array name="BaudRate">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>56000</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>128000</item>
+        <item>256000</item>
+    </string-array>
+    <string-array name="pumpSpeed">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+        <item>32</item>
+        <item>64</item>
+    </string-array>
+  <string-array name="actionTypes">
+      <item>阀动作</item>
+      <item>泵动作</item>
+      <item>AD采样</item>
+      <item>等待时间</item>
+      <item>进样动作</item>
+  </string-array>
+    <string-array name="flowTypes">
+        <item>测量流程</item>
+        <item>维护动作</item>
+        <item>标定1</item>
+        <item>标定2</item>
+    </string-array>
+    <string-array name="heightTypes">
+        <item>低液位</item>
+        <item>高液位</item>
+        <item>满管</item>
+    </string-array>
+    <string name="edit">Edit</string>
+    <string-array name="samples">
+        <item>Top</item>
+        <item>Overlay</item>
+    </string-array>
+</resources>

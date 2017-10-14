@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_header_bg">
+
+        <TableRow
+            android:id="@+id/pump_list_header_row"
+            >
+            <TextView
+                android:id="@+id/pump_name_header"
+                style="@style/list_item_header_text_style"
+                android:layout_width="130dp"
+                android:text="泵名称" />
+            <TextView
+                android:id="@+id/pump_ImpulseCount_header"
+                style="@style/list_item_header_text_style"
+                android:layout_width="130dp"
+                android:text="脉冲数" />
+            <TextView
+                android:id="@+id/pump_Direction_header"
+                style="@style/list_item_header_text_style"
+                android:layout_width="130dp"
+                android:text="方向" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

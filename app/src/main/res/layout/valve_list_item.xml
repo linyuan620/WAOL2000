@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow android:id="@+id/valve_list_row">
+
+        <TextView
+            android:id="@+id/valve_name"
+            style="@style/list_item_text_style"
+            android:layout_width="130dp" />
+
+        <TextView
+            android:id="@+id/valve_command_index"
+            style="@style/list_item_text_style"
+            android:layout_width="180dp" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:padding="@dimen/form_padding">
+
+    <include layout="@layout/flow_p_list_header" />
+
+    <ListView
+        android:id="@+id/flow_p_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/color_dark_grey"
+        android:dividerHeight="0.1dp"
+        android:fastScrollEnabled="true"
+        android:focusable="true"
+        android:scrollingCache="true" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c_content_activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/form_padding"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="skyray.waol2000.ActivityHistory"
+    tools:showIn="@layout/activity_history">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="开始时间"
+            android:background="@drawable/labelitemback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <DatePicker
+                android:id="@+id/dp_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"></DatePicker>
+
+            <TimePicker
+                android:id="@+id/tp_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TimePicker>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="结束时间"
+            android:background="@drawable/labelitemback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <DatePicker
+                android:id="@+id/dp_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"></DatePicker>
+
+            <TimePicker
+                android:id="@+id/tp_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TimePicker>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="match_parent"></View>
+
+            <Button
+                android:id="@+id/btnQueryHistory"
+                style="@style/toolButtonStyle"
+                android:text="查询" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+<include layout="@layout/content_activity_fragment_history"></include>
+
+</LinearLayout>
+

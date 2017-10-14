@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--点击背景-->
+    <item android:state_pressed="true">
+        <shape>
+            <!--色值e79429-->
+            <solid android:color="@color/accent" />
+            <!--圆角-->
+            <corners android:radius="10dp" />
+            <padding android:bottom="8dp" android:left="20dp" android:right="20dp" android:top="8dp"></padding>
+        </shape>
+    </item>
+    <!--选中背景-->
+    <item android:state_focused="true">
+        <shape>
+            <!--色值e79429-->
+            <solid android:color="@color/accent" />
+            <!--圆角-->
+            <corners android:radius="10dp" />
+            <padding android:bottom="8dp" android:left="20dp" android:right="20dp" android:top="8dp"></padding>
+        </shape>
+    </item>
+    <!--默认背景f6aa3e-->
+
+    <item android:state_enabled="false">
+        <shape>
+            <!--色值e79429-->
+            <solid android:color="@color/color_button_disenabled" />
+            <!--圆角-->
+            <corners android:radius="10dp" />
+            <padding android:bottom="8dp" android:left="20dp" android:right="20dp" android:top="8dp"></padding>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@color/button_normal" />
+            <corners android:radius="10dp" />
+            <padding android:bottom="8dp" android:left="20dp" android:right="20dp" android:top="8dp"></padding>
+        </shape>
+    </item>
+    <!--<item android:state_pressed="true">-->
+    <!--&lt;!&ndash; 定义当button 处于pressed 状态时的形态。&ndash;&gt;-->
+    <!--<shape>-->
+    <!--<gradient android:startColor="#eac100" />-->
+    <!--<stroke android:width="2dp" android:color="#000000" />-->
+    <!--<corners android:radius="10dp" />-->
+    <!--<padding android:bottom="8dp" android:left="20dp"-->
+    <!--android:right="20dp" android:top="8dp" />-->
+    <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:state_focused="true">-->
+    <!--&lt;!&ndash; 定义当button获得focus时的形态&ndash;&gt;-->
+    <!--<shape>-->
+    <!--<gradient android:startColor="#eac100" />-->
+    <!--<stroke android:width="2dp" android:color="#98D061" />-->
+    <!--<corners android:radius="10dp" />-->
+    <!--<padding android:bottom="8dp" android:left="20dp"-->
+    <!--android:right="20dp" android:top="8dp" />-->
+    <!--</shape>-->
+    <!--</item>-->
+    <!--<item>-->
+    <!--<shape>-->
+    <!--<solid android:color="#98D061" />-->
+    <!--<corners android:radius="10dp" />-->
+    <!--<padding android:bottom="8dp" android:left="20dp"-->
+    <!--android:right="20dp" android:top="8dp" />-->
+    <!--</shape>-->
+    <!--</item>-->
+</selector>

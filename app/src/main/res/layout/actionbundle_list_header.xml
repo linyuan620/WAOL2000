@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="560dp"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_header_bg">
+
+        <TableRow android:id="@+id/actionbundle_list_header_row">
+
+            <TextView
+                style="@style/list_item_header_text_style"
+                android:layout_width="180dp"
+                android:text="动作包名称" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

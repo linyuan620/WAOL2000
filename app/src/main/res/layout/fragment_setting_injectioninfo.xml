@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="skyray.waol2000.FragmentSetting_InjectionInfo">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/injectioninfo_list"></include>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/form_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/injectionInfoName" />
+
+        <EditText
+            android:id="@+id/etInjectionName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/injectionInfoInputPort" />
+
+        <EditText
+            android:id="@+id/etInputPort"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/injectionInfoOutputPort" />
+
+        <EditText
+            android:id="@+id/etOutputPort"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/injectionInfoHeigth" />
+
+        <Spinner
+            android:id="@+id/ddl_HeightType"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <Button
+            android:id="@+id/btnAddInjectionInfo"
+            style="@style/toolButtonStyle"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/btnDeleteInjectionInfo"
+            style="@style/toolButtonStyle"
+            android:text="@string/delete" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

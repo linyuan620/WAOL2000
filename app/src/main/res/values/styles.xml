@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- 应用程序主题 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textSize">@dimen/nh3n_textSize</item>
+        <!--只有通过下面方式才能修改标题文本样式-->
+        <item name="toolbarStyle">@style/nh3ntoolbar</item>
+    </style>
+
+    <!--标题文本样式-->
+    <style name="nh3ntoolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:paddingLeft">32dp</item>
+        <item name="titleTextAppearance">@style/nh3ntoolbartitle</item>
+    </style>
+
+    <style name="nh3ntoolbartitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!--主页图标导航按钮样式-->
+    <style name="menuImageButtonStyle">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:layout_width">128dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!--各个页面样式-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--导航到主页面按钮样式-->
+    <style name="FloatingActionButtonStyle">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--列表控件内容和表头样式-->
+    <style name="list_item_text_style">
+        <item name="android:textSize">@dimen/nh3n_textSize</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="list_item_header_text_style" parent="list_item_text_style">
+        <item name="android:textColor">@color/color_List_Item_Text_Selected</item>
+    </style>
+
+    <!--tablayout样式-->
+    <style name="nh3nTabLayout" parent="Base.Widget.Design.TabLayout" >
+        <item name="tabTextAppearance">@style/nh3ntabTextAppearance</item>
+    </style>
+    <style name="nh3ntabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <!--设置界面菜单导航样式-->
+    <style name="SettingNavigationView" parent="Widget.Design.NavigationView">
+        <item name="itemTextAppearance">@style/SettingNavigationViewText</item>
+        <!--高低版本分别设置菜单项高度-->
+        <!--<item name="android:listPreferredItemHeightSmall">128dp</item>-->
+        <item name="listPreferredItemHeightSmall">64dp</item>
+    </style>
+
+    <style name="SettingNavigationViewText" parent="android:TextAppearance">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!--添加删除等功能按钮样式-->
+    <style name="toolButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">@dimen/form_padding</item>
+    </style>
+
+    <!--开关按钮样式-->
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!--测量配置小时选择框样式-->
+    <style name="pointTimeCheckboxStyle">
+        <item name="android:padding">6dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="fragmentPaddingStyle">
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+</resources>

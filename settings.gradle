@@ -1,0 +1,1 @@
+include ':app', ':SwitchButtonLib', ':aseroutils', ':amodbus4j', ':serialport', ':library', ':progressbarlib'

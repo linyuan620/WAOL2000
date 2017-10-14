@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow android:id="@+id/injectionInfo_list_row">
+
+        <TextView
+            android:id="@+id/injectionInfo_name"
+            style="@style/list_item_text_style"
+            android:layout_width="130dp" />
+
+        <TextView
+            android:id="@+id/injectionInfo_InputPort"
+            style="@style/list_item_text_style"
+            android:layout_width="180dp" />
+
+        <TextView
+            android:id="@+id/injectionInfo_OutputPort"
+            style="@style/list_item_text_style"
+            android:layout_width="180dp" />
+
+        <TextView
+            android:id="@+id/injectionInfo_Height"
+            style="@style/list_item_text_style"
+            android:layout_width="130dp" />
+
+    </TableRow>
+</TableLayout>

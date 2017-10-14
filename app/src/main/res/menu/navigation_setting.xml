@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting_valve"
+            android:title="@string/title_setting_valve" />
+
+        <item
+            android:id="@+id/setting_pump"
+            android:title="@string/title_setting_pump" />
+
+        <item
+            android:id="@+id/setting_injection"
+            android:title="@string/title_setting_injection" />
+
+        <item
+            android:id="@+id/setting_action"
+            android:title="@string/title_setting_action" />
+
+        <item
+            android:id="@+id/setting_flow"
+            android:title="@string/title_setting_flow" />
+
+        <item
+            android:id="@+id/setting_calibrate"
+            android:title="@string/title_setting_calibrate" />
+
+        <item
+            android:id="@+id/setting_measure"
+            android:title="@string/title_setting_measure" />
+
+        <item
+            android:id="@+id/setting_connection"
+            android:title="@string/title_setting_connection" />
+
+        <item
+            android:id="@+id/setting_about"
+            android:title="@string/title_setting_about" />
+
+    </group>
+</menu>
